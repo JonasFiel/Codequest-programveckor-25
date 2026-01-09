@@ -1,0 +1,8 @@
+:root {
+  --primary-bg-color: #1A1B26;/*Deep Navy*/
+  --text-color: #DDE1F0; /*Off-white*/
+  --accent1: #FFFF9E; /*Quest Gold*/
+  --accent2: #313247; /*Magic Purple*/
+  --correct: #9ECE6A; /*Correct Green*/
+  --incorrect: #F7768E; /*Incorrect Red*/
+}
