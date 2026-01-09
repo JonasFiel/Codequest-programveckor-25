@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navbar {
+  position: fixed;
+  bottom: 0;       /* Positions it at the bottom */
+  width: 100%;     
+  background-color: var(--accent2);
+  overflow: hidden;
+}
+
+.navbar a {
+  /* Style your links here */
+  display: inline-flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
