@@ -1,0 +1,30 @@
+:root {
+  /*Dark Mode Colors*/
+  --DM-primary-bg-color: #1A1B26;/*Deep Navy*/
+  --DM-secondary-bg-color: #313247;/*Dark Navy*/
+  --DM-text-color: #DDE1F0; /*Off-white*/
+  --accent1: #FFFF9E; /*Quest Gold*/
+  --accent2: #313247; /*Magic Purple*/
+  --correct: #9ECE6A; /*Correct Green*/
+  --incorrect: #F7768E; /*Incorrect Red*/
+
+  /*Light Mode Colors*/
+  --LM-primary-bg-color: #b8bff0; /*Light Blue*/
+  --LM-text-color: #2E2E2E; /*Dark Gray*/   
+}
+
+
+body {
+  background-color: var(--DM-primary-bg-color);
+  color: var(--DM-text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: grid;
+  background-color: var(--DM-secondary-bg-color);
+  margin: auto;
+  width: 60vw;
+  height: 100vh;
+}
