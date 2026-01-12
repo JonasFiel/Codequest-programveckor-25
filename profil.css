@@ -1,0 +1,138 @@
+@import url("style.css");
+
+:root {
+  /*Dark Mode Colors*/
+  --DM-primary-bg-color: #1A1B26;/*Deep Navy*/
+  --DM-secondary-bg-color: #313247;/*Dark Navy*/
+  --DM-text-color: #DDE1F0; /*Off-white*/
+  --accent1: #FFFF9E; /*Quest Gold*/
+  --accent2: #313247; /*Magic Purple*/
+  --correct: #9ECE6A; /*Correct Green*/
+  --incorrect: #F7768E; /*Incorrect Red*/
+
+  /*Light Mode Colors*/
+  --LM-primary-bg-color: #b8bff0; /*Light Blue*/
+  --LM-text-color: #2E2E2E; /*Dark Gray*/   
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--DM-primary-bg-color);
+}
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--DM-secondary-bg-color) !important;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 8px;
+}
+
+.navbar a {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  color: var(--DM-text-color);
+  text-decoration: none;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.nav-text {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 84px;
+    background-color: var(--DM-secondary-bg-color) !important;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 8px;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+
+  .navbar a {
+    padding: 6px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        width: 200px;
+        background-color: var(--DM-secondary-bg-color) !important;
+    }
+    
+    .navbar img {
+        width: 48px;
+        height: 48px;
+    }
+
+
+    .navbar li {
+      width: 100%;
+    }
+
+    .navbar a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+      justify-content: flex-start;
+      padding: 10px;
+    }
+
+    .nav-text {
+      display: inline-block;
+      color: var(--DM-text-color);
+      font-size: 20px;
+      white-space: nowrap;
+    }
+}
