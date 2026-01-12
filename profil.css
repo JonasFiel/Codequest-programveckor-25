@@ -1,19 +1,4 @@
-@import url("style.css");
-
-:root {
-  /*Dark Mode Colors*/
-  --DM-primary-bg-color: #1A1B26;/*Deep Navy*/
-  --DM-secondary-bg-color: #313247;/*Dark Navy*/
-  --DM-text-color: #DDE1F0; /*Off-white*/
-  --accent1: #FFFF9E; /*Quest Gold*/
-  --accent2: #313247; /*Magic Purple*/
-  --correct: #9ECE6A; /*Correct Green*/
-  --incorrect: #F7768E; /*Incorrect Red*/
-
-  /*Light Mode Colors*/
-  --LM-primary-bg-color: #b8bff0; /*Light Blue*/
-  --LM-text-color: #2E2E2E; /*Dark Gray*/   
-}
+@import url("bas/style.css");
 
 * {
     box-sizing: border-box;
