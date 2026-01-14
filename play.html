@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="play.title">Spela — Code Quest</title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="play.css">
+  <link rel="stylesheet" href="onboarding.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="karta.html"><img src="varldskarta.png" alt=""><span class="nav-text" data-i18n="nav.world">Världskarta</span></a></li>
+      <li><a href="profil.html"><img src="profil.png" alt=""><span class="nav-text" data-i18n="nav.profile">Profil</span></a></li>
+      <li><a href="inställning.html"><img src="settings.png" alt=""><span class="nav-text" data-i18n="nav.settings">Inställningar</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="play-main">
+    <header class="play-meta">
+      <h1 id="areaTitle">Area</h1>
+      <div class="meta-row">
+        <span class="meta-pill difficulty-badge"></span>
+        <span class="meta-pill" id="progress">0 / 0</span>
+        <span class="meta-pill" id="score">0</span>
+      </div>
+    </header>
+
+    <section class="play-card" aria-live="polite">
+      <div id="q-text" class="q-text">Fråga</div>
+      <div id="q-choices" class="q-choices"></div>
+      <div class="play-controls">
+        <button id="skipBtn" class="btn outline" data-i18n="play.backToMap">Avbryt</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="language.js"></script>
+  <script src="theme.js"></script>
+  <script src="onboarding.js"></script>
+  <script src="quiz.js"></script>
+  <script src="play.js"></script>
+</body>
+</html>

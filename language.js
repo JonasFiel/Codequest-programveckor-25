@@ -43,6 +43,7 @@
       "settings.logoutConfirm":"Är du säker att du vill logga ut?",
       "settings.loggingOut":"Loggar ut…",
       "settings.loggedOut":"Utloggad",
+      "settings.restartTour":"Starta rundtur",
       "question.title":"Välj svårighetsgrad",
       "question.subtitle":"Välj din svårighetsgrad!",
       "question.selectPrompt":"Välj en svårighetsgrad",
@@ -51,7 +52,17 @@
       "question.hard":"Svår",
       "question.selected":"Vald",
       "question.redirect":"Startar… Omdirigerar till kartan.",
-      "question.startNow":"Starta"
+      "question.startNow":"Starta",
+      "tour.prev":"Föregående","tour.next":"Nästa","tour.skip":"Hoppa över","tour.finish":"Klar",
+      "tour.nav.title":"Navigera","tour.nav.desc":"Här hittar du navigeringen, tema- och språkval.",
+      "tour.map.title":"Utforska kartan","tour.map.desc":"Klicka ett område för att se detaljer och starta uppdrag.",
+      "tour.map.first.title":"Första området","tour.map.first.desc":"Börja här för en enkel introduktion.",
+      "tour.profile.avatar.title":"Din avatar","tour.profile.avatar.desc":"Här kan du byta avatar och hantera profilinfo.",
+      "tour.profile.xp.title":"Erfarenhet","tour.profile.xp.desc":"XP fylls när du klarar uppdrag och ger nivåer.",
+      // lägg till under sv:
+      "play.title":"Spela","play.score":"Poäng","play.correct":"Rätt!","play.wrong":"Fel",
+      "play.finish":"Slutfört","play.xpGained":"XP erhölls","play.backToMap":"Tillbaka till kartan","play.confirmExit":"Vill du avsluta spelet?",
+      "play.noQuestions":"Inga frågor för detta område",
     },
     en: {
       "nav.world":"World Map","nav.profile":"Profile","nav.settings":"Settings",
@@ -103,7 +114,17 @@
       "question.hard":"Hard",
       "question.selected":"Selected",
       "question.redirect":"Starting… redirecting to the map.",
-      "question.startNow":"Start"
+      "question.startNow":"Start",
+      "tour.prev":"Previous","tour.next":"Next","tour.skip":"Skip","tour.finish":"Done",
+      "tour.nav.title":"Navigate","tour.nav.desc":"Here you find the navigation, theme and language options.",
+      "tour.map.title":"Explore the map","tour.map.desc":"Click an area to see details and start quests.",
+      "tour.map.first.title":"First area","tour.map.first.desc":"Start here for an easy introduction.",
+      "tour.profile.avatar.title":"Your avatar","tour.profile.avatar.desc":"Here you can change your avatar and manage profile info.",
+      "tour.profile.xp.title":"Experience","tour.profile.xp.desc":"XP fills as you complete quests and grants levels.",
+      // och under en:
+      "play.title":"Play","play.score":"Score","play.correct":"Correct!","play.wrong":"Wrong",
+      "play.finish":"Finished","play.xpGained":"XP gained","play.backToMap":"Back to map","play.confirmExit":"Do you want to exit the game?",
+      "play.noQuestions":"No questions for this area",
     }
   };
 

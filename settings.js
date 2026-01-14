@@ -19,6 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => { window.location.href = 'index.html'; }, 350);
   });
 
+  document.getElementById('restartTourBtn')?.addEventListener('click', () => {
+    try { localStorage.removeItem('onboardingSeen'); } catch(e) {}
+    window.onboarding?.start(true);
+  });
+
   updateText();
   document.addEventListener('i18n:languagechange', updateText);
 });

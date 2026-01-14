@@ -1,0 +1,9 @@
+/* ...new file... */
+.onboard-overlay { position:fixed; inset:0; background: rgba(8,10,18,0.45); z-index:120000; }
+.onboard-highlight { position:absolute; border-radius:12px; box-shadow: 0 0 0 9999px rgba(0,0,0,0.35) inset, 0 8px 36px rgba(0,0,0,0.6); border: 3px solid color-mix(in srgb, var(--accent2) 56%, transparent); transition: all 260ms ease; pointer-events:none; z-index:120001; }
+.onboard-pop { position: absolute; min-width:260px; max-width:360px; background: var(--DM-secondary-bg-color); color:var(--DM-text-color); padding:12px; border-radius:10px; box-shadow:0 12px 48px rgba(0,0,0,0.6); z-index:120002; }
+.onboard-pop h3 { margin:0 0 6px 0; font-size:16px; }
+.onboard-pop p { margin:0 0 8px 0; font-size:14px; color: color-mix(in srgb, var(--DM-text-color) 72%, transparent); }
+.onboard-controls { display:flex; gap:8px; justify-content:flex-end; margin-top:8px; }
+.onboard-controls .btn { padding:8px 10px; border-radius:8px; }
+@media (max-width:520px){ .onboard-pop { left: 12px !important; right: 12px; top: 12px !important; } }
