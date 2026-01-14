@@ -1,26 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="karka.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-i18n="map.title">Världskarta</title>
+
+  <link rel="stylesheet" href="karka.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#karta.html"><img src="varldskarta.png" alt="Världskarta"><span class="nav-text">Världskarta</span></a></li>
-            <li><a href="#profil.html"><img src="profil.png" alt="Profil"><span class="nav-text">Profil</span></a></li>
-            <li><a href="#inställning.html"><img src="settings.png" alt="Tjänster"><span class="nav-text">Inställningar</span></a></li>
-        </ul>
-    </nav>
+  <nav class="navbar">
+    <ul>
+      <li><a href="karta.html"><img src="varldskarta.png" alt="Världskarta"><span class="nav-text" data-i18n="nav.world">Världskarta</span></a></li>
+      <li><a href="profil.html"><img src="profil.png" alt="Profil"><span class="nav-text" data-i18n="nav.profile">Profil</span></a></li>
+      <li><a href="inställning.html"><img src="settings.png" alt="Inställningar"><span class="nav-text" data-i18n="nav.settings">Inställningar</span></a></li>
+    </ul>
+  </nav>
 
-    <main>
-        <h1>Världskarta</h1>
-        <p>Här kan du utforska världen!</p>
-    </main>
+  <header class="page-header">
+    <h1 data-i18n="map.title">Världskarta</h1>
+    <p data-i18n="map.subtitle">Utforska olika områden, gå från vänster till höger!</p>
+  </header>
 
+  <main class="grid" role="main" aria-label="Karta">
+    <div class="grid-item">
+      <img src="castle.png" alt="Slott" data-start="play-castle.html"
+           data-i18n="area.castle" data-i18n-attr="alt" data-desc="area.castle.desc">
+      <div class="grid-label" data-i18n="area.castle">Slott</div>
+    </div>
+
+    <div class="grid-item">
+      <img src="village.png" alt="By" data-start="play-village.html"
+           data-i18n="area.village" data-i18n-attr="alt" data-desc="area.village.desc">
+      <div class="grid-label" data-i18n="area.village">By</div>
+    </div>
+
+    <div class="grid-item">
+      <img src="forest.png" alt="Skog" data-start="play-forest.html"
+           data-i18n="area.forest" data-i18n-attr="alt" data-desc="area.forest.desc">
+      <div class="grid-label" data-i18n="area.forest">Skog</div>
+    </div>
+
+    <div class="grid-item">
+      <img src="cave.png" alt="Grotta" data-start="play-cave.html"
+           data-i18n="area.cave" data-i18n-attr="alt" data-desc="area.cave.desc">
+      <div class="grid-label" data-i18n="area.cave">Grotta</div>
+    </div>
+
+    <div class="grid-item">
+      <img src="lake.png" alt="Sjön" data-start="play-lake.html"
+           data-i18n="area.lake" data-i18n-attr="alt" data-desc="area.lake.desc">
+      <div class="grid-label" data-i18n="area.lake">Sjön</div>
+    </div>
+
+    <div class="grid-item large">
+      <img src="tower-tail.png" alt="Torn med drake" data-start="play-bigarea.html"
+           data-i18n="area.bigarea" data-i18n-attr="alt" data-desc="area.bigarea.desc" style="max-width:100%; height:auto;">
+      <div class="grid-label" data-i18n="area.bigarea">Torn med drake</div>
+    </div>
+
+    <div class="grid-item">
+      <img src="tower.png" alt="Torn" data-start="play-tower.html"
+           data-i18n="area.tower" data-i18n-attr="alt" data-desc="area.tower.desc">
+      <div class="grid-label" data-i18n="area.tower">Torn</div>
+    </div>
+
+    <div class="grid-item">
+      <img src="fields.png" alt="Fält" data-start="play-fields.html"
+           data-i18n="area.fields" data-i18n-attr="alt" data-desc="area.fields.desc">
+      <div class="grid-label" data-i18n="area.fields">Fält</div>
+    </div>
+
+    <div class="grid-item">
+      <img src="mine.png" alt="Gruva" data-start="play-mine.html"
+           data-i18n="area.mine" data-i18n-attr="alt" data-desc="area.mine.desc">
+      <div class="grid-label" data-i18n="area.mine">Gruva</div>
+    </div>
+
+    <div class="grid-item">
+      <img src="swamp.png" alt="Sumpmark" data-start="play-swamp.html"
+           data-i18n="area.swamp" data-i18n-attr="alt" data-desc="area.swamp.desc">
+      <div class="grid-label" data-i18n="area.swamp">Sumpmark</div>
+    </div>
+
+    <div class="grid-item">
+      <img src="desert.png" alt="Öken" data-start="play-desert.html"
+           data-i18n="area.desert" data-i18n-attr="alt" data-desc="area.desert.desc">
+      <div class="grid-label" data-i18n="area.desert">Öken</div>
+    </div>
+
+    <div class="grid-item">
+      <img src="island.png" alt="Ö" data-start="play-island.html"
+           data-i18n="area.island" data-i18n-attr="alt" data-desc="area.island.desc">
+      <div class="grid-label" data-i18n="area.island">Ö</div>
+    </div>
+
+    <div class="grid-item">
+      <img src="ruins.png" alt="Ruiner" data-start="play-ruins.html"
+           data-i18n="area.ruins" data-i18n-attr="alt" data-desc="area.ruins.desc">
+      <div class="grid-label" data-i18n="area.ruins">Ruiner</div>
+    </div>
+
+    <div class="grid-item">
+      <img src="port.png" alt="Hamnen" data-start="play-port.html"
+           data-i18n="area.port" data-i18n-attr="alt" data-desc="area.port.desc">
+      <div class="grid-label" data-i18n="area.port">Hamnen</div>
+    </div>
+  </main>
+
+  <!-- Modal popup -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-panel" role="document" aria-labelledby="modal-title">
+      <button class="modal-close" aria-label="Close" data-close>&times;</button>
+      <img class="modal-img" src="" alt="">
+      <div class="modal-body">
+        <h2 id="modal-title" class="modal-title"></h2>
+        <p class="modal-text"></p>
+        <div class="modal-actions">
+          <button class="modal-start" data-i18n="modal.start">Start</button>
+          <button class="modal-cancel" data-close data-i18n="modal.cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="language.js"></script>
+  <script src="theme.js"></script>
+  <script src="karta.js"></script>
 </body>
 </html>

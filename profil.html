@@ -1,20 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="karka.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profil — CodeQuest</title>
+
+  <!-- page + project styles -->
+  <link rel="stylesheet" href="profil.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#karta.html"><img src="varldskarta.png" alt="Världskarta"><span class="nav-text">Karta</span></a></li>
-            <li><a href="#profil.html"><img src="profil.png" alt="Profil"><span class="nav-text">Profil</span></a></li>
-            <li><a href="#inställning.html"><img src="settings.png" alt="Tjänster"><span class="nav-text">Inställningar</span></a></li>
-        </ul>
-    </nav>
+  <nav class="navbar">
+    <ul>
+      <li><a href="karta.html"><img src="varldskarta.png" alt="Världskarta"><span class="nav-text" data-i18n="nav.world">Världskarta</span></a></li>
+      <li><a href="profil.html"><img src="profil.png" alt="Profil"><span class="nav-text" data-i18n="nav.profile">Profil</span></a></li>
+      <li><a href="inställning.html"><img src="settings.png" alt="Inställningar"><span class="nav-text" data-i18n="nav.settings">Inställningar</span></a></li>
+    </ul>
+  </nav>
 
+  <main class="profile-main" id="profileMain" aria-labelledby="profileTitle">
+    <header class="profile-header">
+      <h1 id="profileTitle" data-i18n="profile.title">Spelare</h1>
+      <p class="subtitle" data-i18n="profile.subtitle">Hjälteprofil — följ dina poäng, utrustning och mer</p>
+    </header>
+
+    <section class="profile-top">
+      <div class="profile-card" aria-labelledby="playerName">
+        <div class="avatar" aria-hidden="true">
+          <img src="efe123.png" alt="Spelare avatar" onerror="this.style.opacity=.1; this.closest('.avatar').dataset.initials='SF'">
+        </div>
+
+        <div class="profile-meta">
+          <h2 id="playerName" class="player-name" contenteditable="false">Spelare</h2>
+          <div class="meta-row">
+            <span class="meta-pill"><span data-i18n="profile.levelLabel">Nivå</span> <strong class="level-num">5</strong></span>
+            <span class="meta-pill"><span data-i18n="profile.classLabel">Klass</span> <strong class="class-name">Riddare</strong></span>
+          </div>
+
+          <div class="xp-wrap" role="region" aria-label="Erfarenhet">
+            <div class="xp-label"><span class="xp-key" data-i18n="profile.xpLabel">XP</span> <span class="xp-numbers">360 / 500</span></div>
+            <div class="xp-bar" role="progressbar" aria-valuemin="0" aria-valuemax="500" aria-valuenow="360" data-current="360" data-max="500">
+              <div class="xp-fill" style="width:0%"></div>
+            </div>
+          </div>
+
+          <div class="profile-actions">
+            <button id="startQuest" class="btn primary" data-i18n="btn.startQuest">Starta uppdrag</button>
+            <button id="editProfile" class="btn" data-i18n="btn.edits">Redigera</button>
+          </div>
+        </div>
+      </div>
+
+      <aside class="stats-card" aria-labelledby="statsTitle">
+        <h3 id="statsTitle" data-i18n="profile.statsTitle">Statistik</h3>
+        <ul class="stats-grid">
+          <li><span class="stat-name" data-i18n="stat.hp">HP</span><strong class="stat-value">120</strong></li>
+          <li><span class="stat-name" data-i18n="stat.attack">Attack</span><strong class="stat-value">16</strong></li>
+          <li><span class="stat-name" data-i18n="stat.defense">Försvar</span><strong class="stat-value">12</strong></li>
+          <li><span class="stat-name" data-i18n="stat.speed">Hastighet</span><strong class="stat-value">9</strong></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="inventory" aria-labelledby="invTitle">
+      <h3 id="invTitle" data-i18n="inventory.title">Inventar</h3>
+      <div class="items-grid">
+        <div class="item" tabindex="0" data-item-key="item.sword">
+          <img src="sword.png" alt="Svärd" onerror="this.style.opacity=.12">
+          <div class="item-name" data-i18n="item.sword">Svärd</div>
+        </div>
+        <div class="item" tabindex="0" data-item-key="item.shield">
+          <img src="shield.png" alt="Sköld" onerror="this.style.opacity=.12">
+          <div class="item-name" data-i18n="item.shield">Sköld</div>
+        </div>
+        <div class="item" tabindex="0" data-item-key="item.potion">
+          <img src="potion.png" alt="Dryck" onerror="this.style.opacity=.12">
+          <div class="item-name" data-i18n="item.potion">Magisk dryck</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="achievements" aria-labelledby="achTitle">
+      <h3 id="achTitle" data-i18n="ach.title">Meriter</h3>
+      <div class="badges">
+        <span class="badge" data-i18n="ach.firstWin">🏆 Första segern</span>
+        <span class="badge" data-i18n="ach.explorer">🗺️ Upptäcktsresande</span>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="language.js"></script>
+  <script src="theme.js"></script>
+  <script src="profil.js"></script>
 </body>
 </html>

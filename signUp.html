@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="signup.title">Skapa ett konto</title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main class="auth-page" role="main">
+    <div class="auth-card" role="region" aria-label="Skapa konto">
+      <div class="auth-brand">
+        <picture>
+          <source media="(max-width:600px)" srcset="logo.png">
+          <img src="logo.png" alt="Code Quest" class="logo">
+        </picture>
+        <h1 data-i18n="index.title">Code Quest</h1>
+        <p class="muted" data-i18n="signup.subtitle">Skapa din hjälteprofil</p>
+      </div>
+
+      <form id="signupForm" class="auth-form" novalidate>
+        <h2 data-i18n="signup.title">Skapa ett konto</h2>
+
+        <label for="su-username" data-i18n="signup.username">Användarnamn</label>
+        <input id="su-username" name="username" type="text" required>
+
+        <label for="su-email" data-i18n="signup.email">E-post</label>
+        <input id="su-email" name="email" type="email" required>
+
+        <label for="su-password" data-i18n="signup.password">Lösenord</label>
+        <input id="su-password" name="password" type="password" required>
+
+        <label for="su-confirm" data-i18n="signup.confirm">Bekräfta lösenord</label>
+        <input id="su-confirm" name="confirm" type="password" required>
+
+        <button type="submit" class="btn primary" data-i18n="signup.create">Skapa konto</button>
+        <a href="index.html" class="btn outline" data-i18n="index.login">Tillbaka till inlogg</a>
+
+        <div id="signup-feedback" class="feedback" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </main>
+
+  <script src="language.js"></script>
+  <script src="theme.js"></script>
+  <script src="signup.js"></script>
+</body>
+</html>

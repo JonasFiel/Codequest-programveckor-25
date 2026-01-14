@@ -8,7 +8,23 @@
   --correct: #9ECE6A; /*Correct Green*/
   --incorrect: #F7768E; /*Incorrect Red*/
 
-  /*Light Mode Colors*/
-  --LM-primary-bg-color: #b8bff0; /*Light Blue*/
-  --LM-text-color: #2E2E2E; /*Dark Gray*/   
+  /*Light Mode Colors (RPG parchment & forest palette) */
+  --LM-primary-bg-color: #efe6cf; /* warm parchment */
+  --LM-text-color: #2b2b20; /* deep parchment text */
+  --LM-secondary-bg-color: #f7f3e8; /* pale parchment */
+  --LM-accent1: #d4af37; /* antique gold */
+  --LM-accent2: #516b34; /* forest green */
+  --LM-correct: #4bd86a; /* victory green */
+  --LM-incorrect: #d9534f; /* crimson error */
+}
+
+/* When light theme is active, override the DM variables so existing CSS stays the same */
+[data-theme="light"] {
+  --DM-primary-bg-color: var(--LM-primary-bg-color, #d1d3e4);
+  --DM-secondary-bg-color: var(--LM-secondary-bg-color, #f0f0f0);
+  --DM-text-color: var(--LM-text-color, #2E2E2E);
+  --accent1: var(--LM-accent1, #ffd86b);
+  --accent2: var(--LM-accent2, #7c5cff);
+  --correct: var(--LM-correct, #2fbf4a);
+  --incorrect: var(--LM-incorrect, #ff6b7a);
 }

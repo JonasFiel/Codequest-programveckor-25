@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Play — Forest Quiz</title>
+
+  <link rel="stylesheet" href="play-forest.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="karta.html"><img src="varldskarta.png" alt="Världskarta"><span class="nav-text">Världskarta</span></a></li>
+      <li><a href="profil.html"><img src="profil.png" alt="Profil"><span class="nav-text">Profil</span></a></li>
+      <li><a href="inställning.html"><img src="settings.png" alt="Inställningar"><span class="nav-text">Inställningar</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="quiz-area" id="quizArea" aria-labelledby="pageTitle">
+    <h1 id="pageTitle">Skogsuppdrag — Kodquiz</h1>
+
+    <!-- 1. Multiple Choice -->
+    <section class="card" id="mcq">
+      <h2>1. Multiple Choice (ABCD)</h2>
+
+      <div class="q">
+        <p>Fråga: Du vill att namnet på ditt äventyr ska synas på webbläsarens flik. Vilken tagg inuti &lt;head&gt; använder du?</p>
+        <label><input type="radio" name="q1" value="A"> <code>&lt;tab&gt;</code> A</label>
+        <label><input type="radio" name="q1" value="B"> <code>&lt;name&gt;</code> B</label>
+        <label><input type="radio" name="q1" value="C"> <code>&lt;title&gt;</code> C</label>
+        <label><input type="radio" name="q1" value="D"> <code>&lt;label&gt;</code> D</label>
+      </div>
+
+      <div class="q">
+        <p>Fråga: Vilken CSS-egenskap ändrar textstorlek?</p>
+        <label><input type="radio" name="q2" value="A"> text-size</label>
+        <label><input type="radio" name="q2" value="B"> font-size</label>
+        <label><input type="radio" name="q2" value="C"> size-style</label>
+        <label><input type="radio" name="q2" value="D"> big-text</label>
+      </div>
+    </section>
+
+    <!-- 2. Console -->
+    <h1>Tips! Skriv in koden i Virtual studio code för att kunna lista ut vad den gör!</h1>
+    <section class="card" id="console">
+      <h2>2. Vad skrivs ut i konsolen?</h2>
+
+      <div class="q">
+        <pre class="code">let hp = 100;
+let skada = 20;
+hp = hp - skada;
+console.log(hp);</pre>
+        <label>Svar: <input type="text" id="a3" placeholder="Svar här"></label>
+      </div>
+
+      <div class="q">
+        <pre class="code">let prefix = "Magisk ";
+let item = "Sköld";
+console.log(prefix + item);</pre>
+        <label>Svar: <input type="text" id="a4" placeholder="Svar här"></label>
+      </div>
+    </section>
+
+    <!-- 3. Fill in the blanks -->
+    <section class="card" id="fill">
+      <h2>3. Fyll i luckorna</h2>
+
+      <div class="q">
+        <pre class="code">&lt;img src="troll.png" ___="Ett argt skogstroll"&gt;</pre>
+        <label>Svar: <input type="text" id="a5" placeholder="Svar här"></label>
+      </div>
+
+      <div class="q">
+        <pre class="code">.scroll-text {
+  text-align: ___;
+}</pre>
+        <label>Svar: <input type="text" id="a6" placeholder="Svar här"></label>
+      </div>
+
+      <div class="q">
+        <pre class="code">___ guld = 500;</pre>
+        <label>Svar: <input type="text" id="a7" placeholder="Svar här"></label>
+      </div>
+    </section>
+
+    <!-- 4. Complete code -->
+    <section class="card" id="complete">
+      <h2>4. Skriva komplett kod</h2>
+
+      <div class="q">
+        <p>Skapa en paragraf som innehåller: "Välkommen till koden!"</p>
+        <label>Svar: <input type="text" id="a8" placeholder="Svar här"></label>
+      </div>
+
+      <div class="q">
+        <p>Skapa en variabel xp med värdet 0 i JavaScript.</p>
+        <label>Svar: <input type="text" id="a9" placeholder="Svar här"></label>
+      </div>
+
+      <div class="q">
+        <p>CSS som ger alla &lt;h1&gt; rubriker färgen green.</p>
+        <label>Svar: <input type="text" id="a10" placeholder="Svar här"></label>
+      </div>
+    </section>
+
+    <div class="controls">
+      <button id="checkQuiz" class="btn primary">Kontrollera svar</button>
+      <button id="resetQuiz" class="btn">Återställ</button>
+    </div>
+
+    <div id="quiz-result" class="result" aria-live="polite"></div>
+  </main>
+
+  <script src="theme.js"></script>
+  <script src="play-forest.js"></script>
+</body>
+</html>

@@ -1,1 +1,46 @@
-<!-- Fråge ställningar -->
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="question.title">Choose difficulty</title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="question.css">
+</head>
+<body>
+  <main class="auth-page" role="main">
+    <div class="auth-card" role="region" aria-label="Choose difficulty">
+      <div class="auth-brand">
+        <picture>
+          <source media="(max-width:600px)" srcset="logo.png">
+          <img src="logo.png" alt="Code Quest" class="logo">
+        </picture>
+        <h1 data-i18n="index.title">Code Quest</h1>
+        <p class="muted" data-i18n="question.subtitle">Choose your difficulty</p>
+      </div>
+
+      <div class="difficulty" role="group" aria-label="Difficulty selection" aria-describedby="diff-feedback">
+        <div class="diff-row" role="radiogroup" aria-label="Difficulty options">
+          <button type="button" class="btn diff" role="radio" aria-checked="false" tabindex="-1" data-difficulty="easy" data-i18n="question.easy">Easy</button>
+          <button type="button" class="btn diff" role="radio" aria-checked="false" tabindex="-1" data-difficulty="medium" data-i18n="question.medium">Medium</button>
+          <button type="button" class="btn diff" role="radio" aria-checked="false" tabindex="-1" data-difficulty="hard" data-i18n="question.hard">Hard</button>
+        </div>
+
+        <div class="diff-actions">
+          <button id="diffStart" type="button" class="btn primary" disabled data-i18n="question.startNow">Start</button>
+          <a href="index.html" class="btn outline" data-i18n="index.login">Back</a>
+        </div>
+
+        <div id="diff-feedback" class="feedback" aria-live="polite"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="language.js"></script>
+  <script src="theme.js"></script>
+  <script src="question.js"></script>
+</body>
+</html>

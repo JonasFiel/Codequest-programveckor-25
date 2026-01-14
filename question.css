@@ -1,1 +1,67 @@
-/* Fråge ställningar */
+@import url(bas/style.css);
+@import url(bas/reset.css);
+
+:root {}
+
+/* difficulty layout */
+.difficulty { display:flex; flex-direction:column; gap:12px; margin-top:6px; align-items:center; }
+.diff-row { display:grid; gap:10px; width:100%; grid-template-columns: repeat(3, 1fr); }
+
+.btn.diff {
+  padding:14px 12px;
+  border-radius:10px;
+  font-weight:700;
+  border:1px solid rgba(255,255,255,0.04);
+  background: transparent;
+  color: var(--DM-text-color);
+  transition: transform .14s ease, box-shadow .14s ease, background .14s ease;
+  min-height:56px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  font-size:15px;
+}
+
+/* specific difficulty borders */
+.btn.diff[data-difficulty="easy"]   { border-color: color-mix(in srgb, var(--correct) 22%, transparent); }
+.btn.diff[data-difficulty="medium"] { border-color: color-mix(in srgb, var(--accent1) 22%, transparent); }
+.btn.diff[data-difficulty="hard"]   { border-color: color-mix(in srgb, var(--incorrect) 22%, transparent); }
+
+/* active state */
+.btn.diff.active,
+.btn.diff[aria-pressed="true"] {
+  color: #111;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.32);
+  transform: translateY(-6px);
+}
+.btn.diff.active[data-difficulty="easy"] {
+  background: linear-gradient(90deg, var(--correct), color-mix(in srgb, var(--correct) 60%, var(--DM-secondary-bg-color)));
+}
+.btn.diff.active[data-difficulty="medium"] {
+  background: linear-gradient(90deg, var(--accent1), color-mix(in srgb, var(--accent1) 60%, var(--DM-secondary-bg-color)));
+}
+.btn.diff.active[data-difficulty="hard"] {
+  background: linear-gradient(90deg, var(--incorrect), color-mix(in srgb, var(--incorrect) 60%, var(--DM-secondary-bg-color)));
+}
+
+/* actions */
+.diff-actions { display:flex; gap:8px; align-items:center; justify-content:center; width:100%; }
+.diff-actions .btn { min-width: 140px; }
+
+/* feedback */
+.feedback { min-height:20px; text-align:center; color: color-mix(in srgb, var(--DM-text-color) 72%, transparent); font-weight:700; }
+
+/* focus state */
+.btn.diff:focus {
+  outline: 3px solid color-mix(in srgb, var(--accent1) 32%, transparent);
+  outline-offset: 4px;
+}
+
+/* responsive */
+@media (max-width:640px) {
+  .diff-row { grid-template-columns: 1fr; }
+  .btn.diff { min-height:48px; }
+  .diff-actions { flex-direction:column; gap:8px; }
+}
+

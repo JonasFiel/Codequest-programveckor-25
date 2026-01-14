@@ -1,37 +1,56 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LogIn</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="index.title">Code Quest — Logga in</title>
+
   <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-  <main>
-    <picture>
-      <source media="(max-width: 600px)" srcset="logo.png">
-      <img src="logo.png" alt="Code Quest Logo">
-    </picture>
+  <main class="auth-page" role="main">
+    <div class="auth-card" role="region" aria-label="Logga in">
+      <div class="auth-brand">
+        <picture>
+          <source media="(max-width:600px)" srcset="logo.png">
+          <img src="logo.png" alt="Code Quest" class="logo">
+        </picture>
+        <h1 data-i18n="index.title">Code Quest</h1>
+        <p class="muted" data-i18n="index.subtitle">Ditt äventyr in i tech‑världen börjar här!</p>
+      </div>
 
-    <h1>Code Quest</h1>
-    <p>Ditt äventyr in i tech-världen nörjar här!</p>
+      <form id="loginForm" class="auth-form" novalidate>
+        <h2 data-i18n="index.login">Logga in</h2>
 
-    <section class="login-section">
-      <h2>Logga in</h2>
-      <form class="login-form">
-        <label for="username">Användarnamn:</label>
-        <input type="text" id="username" name="username" required>
+        <label for="username" data-i18n="index.username">Användarnamn</label>
+        <input id="username" name="username" type="text" required autocomplete="username">
 
-        <label for="password">Lösenord:</label>
-        <input type="password" id="password" name="password" required>
+        <label for="password" data-i18n="index.password">Lösenord</label>
+        <div class="password-row">
+          <input id="password" name="password" type="password" required autocomplete="current-password">
+          <button type="button" class="show-pass" aria-pressed="false" aria-label="Visa lösenord">👁️</button>
+        </div>
 
-        <button type="submit">Log in</button>
+        <div class="form-row">
+          <label class="remember"><input type="checkbox" name="remember"> <span data-i18n="index.remember">Kom ihåg mig</span></label>
+          <a href="#" class="forgot" data-i18n="index.forgot">Glömt lösenordet?</a>
+        </div>
+
+        <button type="submit" class="btn primary" id="loginBtn" data-i18n="index.loginButton">Logga in</button>
+
+        <div class="divider"><span data-i18n="index.or">Eller</span></div>
+
+        <a href="signup.html" class="btn outline" id="signupLink" data-i18n="index.signupLink">Skapa ett konto</a>
+
+        <div id="login-feedback" class="feedback" role="status" aria-live="polite"></div>
       </form>
-      <a href ="singUp.html" class="signup">Skapa ett konto</a>
-      <br>
-      <a href="#">Glömt lösenordet?</a>
-    </section>
+    </div>
   </main>
+
+  <script src="language.js"></script>
+  <script src="theme.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>

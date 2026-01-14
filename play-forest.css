@@ -13,18 +13,16 @@ body {
 .navbar {
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
-  height: var(--navbar-height, 64px);
+  width: 100%;
   background-color: var(--DM-secondary-bg-color) !important;
-  z-index: 999; /* below modal (9999) but above page content */
+  overflow: hidden;
+
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column; /* changed: stack icons vertically */
+  justify-content: flex-start;
   align-items: center;
   gap: 12px;
-  padding: 8px 6px;
-  box-shadow: 0 -6px 18px rgba(0,0,0,0.25);
+  padding: 6px 8px;
 }
 
 .navbar a {
@@ -37,27 +35,28 @@ body {
 
 .navbar ul {
   display: flex;
-  flex-direction: row;
+  flex-direction:row; /* changed: ensure list is vertical */
   gap: 12px;
   list-style: none;
   margin: 0;
   padding: 0;
-  align-items: center;
 }
 
 .navbar img {
   display: block;
-  width: var(--navbar-icon-size, 40px);
-  height: var(--navbar-icon-size, 40px);
+  width: 100px;
+  height: 100px;
   object-fit: contain;
 }
 
 .nav-text {
   display: none;
+  hover {
+    display: inline-block;
+  }
 }
 
 @media screen and (min-width: 600px) {
-  :root { --navbar-icon-size: 48px; }
   .navbar {
     position: fixed;
     top: 0;
@@ -73,7 +72,6 @@ body {
     align-items: center;
     gap: 12px;
     padding: 12px 8px;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .navbar ul {
@@ -102,19 +100,12 @@ body {
     padding: 6px;
   }
 
-
   header {
     padding: 16px;
     background-color: var(--DM-secondary-bg-color);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    flex-direction: column;
+    left: 25%;
     color: var(--DM-text-color);
-    text-align: center;
-  }
-  header h1{
-    font-size: 24px;
-    font-weight: bold;
   }
 
   /* basic 7 columns x 2 rows grid for main */
@@ -227,170 +218,54 @@ body {
   transform: scale(1.12) rotate(-6deg);
 }
 
-
-.grid-item,
-.grid-item img {
-  transition: transform 220ms cubic-bezier(.2,.8,.2,1), box-shadow 220ms cubic-bezier(.2,.8,.2,1), filter 220ms ease;
-  will-change: transform, box-shadow, filter;
-}
-
-
-.grid-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 36px rgba(0,0,0,0.30);
-  background: rgba(255,255,255,0.02);
-  z-index: 5;
-}
-
-
-.grid-item:hover img {
-  transform: scale(1.04);
-  filter: saturate(1.06) contrast(1.03);
-}
-
-
-.grid-item.large:hover {
-  transform: translateY(-6px) scale(1.01);
-}
-
-/* Keyboard accessibility: show same effect on keyboard focus */
-.grid-item:focus-within,
-.grid-item:focus {
-  outline: 2px solid rgba(255,255,255,0.06);
-  transform: translateY(-6px);
-}
-
-/* Modal styles */
-.modal {
-  position: fixed;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  z-index: 9999;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 180ms ease;
-}
-
-.modal.open {
-  pointer-events: auto;
-  opacity: 1;
-}
-
-/* semi-transparent overlay */
-.modal-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-}
-
-/* panel */
-.modal-panel {
-  position: relative;
-  background: var(--DM-secondary-bg-color);
-  color: var(--DM-text-color);
-  border-radius: 12px;
-  padding: 18px;
-  width: min(92vw, 640px);
-  max-height: 88vh;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
-  transform: translateY(12px) scale(.98);
-  transition: transform 180ms ease;
-  z-index: 2;
-  overflow: auto;
-}
-
-/* when open, pop the panel slightly */
-.modal.open .modal-panel {
-  transform: translateY(0) scale(1);
-}
-
-/* close button */
-.modal-close {
-  position: absolute;
-  right: 10px;
-  top: 8px;
+/* quiz area */
+.quiz-area {
+  padding: 20px;
+  max-width: 900px;
+  margin: 80px auto 40px;
+  color: var(--DM-text-color, #e6e9f2);
   background: transparent;
-  border: none;
-  color: var(--DM-text-color);
-  font-size: 22px;
-  cursor: pointer;
 }
 
-/* image inside modal */
-.modal-img {
-  width: 100%;
-  max-height: 320px;
-  object-fit: contain;
-  border-radius: 8px;
-  display: block;
-  margin-bottom: 12px;
+.quiz-area h1{
+    font-size: 20px;
+    margin-bottom: 12px;
 }
 
-/* body */
-.modal-body {
-  padding: 4px 2px 6px 2px;
+/* cards */
+.card {
+  background: color-mix(in srgb, var(--DM-secondary-bg-color) 88%, transparent);
+  border: 1px solid rgba(255,255,255,0.03);
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+}
+main h1{
+    color: var(--DM-text-color);
+    size: 24px;
+}
+.card p{
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: var(--DM-text-color);
 }
 
-.modal-title {
-  margin: 6px 0;
-  font-size: 20px;
+.card h2 { margin: 0 0 10px 0; font-size: 16px; color: var(--DM-text-color); }
+
+/* question layout */
+.q { margin: 8px 0; display: grid; gap:8px; }
+.q label { display: block; cursor: pointer; color: var(--DM-text-color); }
+.code { background: rgba(0,0,0,0.22); padding:10px; border-radius:6px; color: var(--DM-text-color); overflow:auto; }
+
+/* buttons */
+.controls { display:flex; gap:10px; justify-content:flex-end; margin-top:8px; }
+.btn { padding:8px 12px; border-radius:8px; border:none; cursor:pointer; background:transparent; color:var(--DM-text-color); }
+.btn.primary { background: var(--accent1); color:#111; font-weight:600; box-shadow: 0 6px 18px rgba(0,0,0,0.28); }
+.result { margin-top:12px; color: var(--DM-text-color); }
+
+/* responsive */
+@media (max-width:720px) {
+  .quiz-area { margin: 92px 12px; padding:12px; }
+  .controls { flex-direction: column-reverse; }
 }
-
-.modal-text {
-  margin: 6px 0 12px 0;
-  color: var(--DM-text-color);
-}
-
-/* actions */
-.modal-actions {
-  display: flex;
-  gap: 10px;
-  justify-content: flex-end;
-}
-
-.modal-start {
-  background: var(--accent1, #FFFF9E);
-  color: #111;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.modal-cancel {
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.06);
-  color: var(--DM-text-color);
-  padding: 8px 12px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-/* make modal responsive */
-@media (max-width: 520px) {
-  .modal-panel { width: 94vw; padding: 12px; }
-  .modal-img { max-height: 200px; }
-}
-
-/* small polish for karta grid */
-.grid-item { cursor: pointer; display:flex; flex-direction:column; align-items:center; gap:8px; }
-.grid-label { color: var(--DM-text-color); font-weight:600; font-size:13px; text-align:center; }
-
-/* Avoid content hidden under fixed bottom navbar and scale grid images for phones */
-@media (max-width: 599px) {
-  body { padding-bottom: calc(var(--navbar-height, 64px) + 12px); }
-
-  .grid-item { padding: 8px; }
-
-  .grid-item img {
-    width: clamp(56px, 22vw, 120px);
-    height: auto;
-    max-height: 120px;
-    display: block;
-  }
-
-  .grid-label { font-size: 12px; }
-}
-

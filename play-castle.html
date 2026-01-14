@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Play — Castle Quiz</title>
+
+  <!-- page-specific styles -->
+  <link rel="stylesheet" href="play-castle.css">
+
+  <!-- project/global styles (keep if you use them) -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="karta.html"><img src="varldskarta.png" alt="Världskarta"><span class="nav-text">Världskarta</span></a></li>
+      <li><a href="profil.html"><img src="profil.png" alt="Profil"><span class="nav-text">Profil</span></a></li>
+      <li><a href="inställning.html"><img src="settings.png" alt="Inställningar"><span class="nav-text">Inställningar</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="quiz-area" id="quizArea">
+    <h1>Kodfrågor — Uppdrag</h1>
+
+    <!-- Multiple Choice -->
+    <section class="quiz-block" id="mcq">
+      <h2>1. Multiple Choice (ABCD)</h2>
+
+      <div class="q">
+        <p>Du hittar ett magiskt pergament... Vilken HTML-tagg använder du för den allra viktigaste rubriken?</p>
+        <label><input type="radio" name="q1" value="A"> <code>&lt;header&gt;</code></label><br>
+        <label><input type="radio" name="q1" value="B"> <code>&lt;h1&gt;</code></label><br>
+        <label><input type="radio" name="q1" value="C"> <code>&lt;p&gt;</code></label><br>
+        <label><input type="radio" name="q1" value="D"> <code>&lt;h6&gt;</code></label>
+      </div>
+
+      <div class="q">
+        <p>Vart i ditt HTML-dokument ska du placera allt innehåll som ska vara synligt?</p>
+        <label><input type="radio" name="q2" value="A"> Inuti <code>&lt;head&gt;</code></label><br>
+        <label><input type="radio" name="q2" value="B"> Inuti <code>&lt;script&gt;</code></label><br>
+        <label><input type="radio" name="q2" value="C"> Inuti <code>&lt;body&gt;</code></label><br>
+        <label><input type="radio" name="q2" value="D"> Ovanför <code>&lt;html&gt;</code></label>
+      </div>
+    </section>
+
+    <!-- Console questions -->
+    <h1>Tips! Skriv in koden i Virtual studio code för att kunna lista ut vad den gör!</h1>
+    <section class="quiz-block" id="console">
+      <h2>2. Vad skrivs ut i konsolen?</h2>
+
+      <div class="q">
+        <pre class="code">let rödDryck = 5;
+let blåDryck = 10;
+console.log(rödDryck + blåDryck);</pre>
+        <label>Svar: <input type="text" id="a3" placeholder="Skriv svar"></label>
+      </div>
+
+      <div class="q">
+        <pre class="code">let guld = "10";
+let silver = "20";
+console.log(guld + silver);</pre>
+        <label>Svar: <input type="text" id="a4" placeholder="Skriv svar"></label>
+      </div>
+    </section>
+
+    <!-- Fill in the blanks -->
+    <section class="quiz-block" id="fill">
+      <h2>3. Fyll i luckorna</h2>
+
+      <div class="q">
+        <pre class="code">&lt;a ___="drakberget.html"&gt;Gå till berget&lt;/a&gt;</pre>
+        <label>Svar: <input type="text" id="a5" placeholder="Skriv svar här!"></label>
+      </div>
+
+      <div class="q">
+        <pre class="code">.armor {
+  ___: blue;
+}</pre>
+        <label>Svar: <input type="text" id="a6" placeholder="Skriv svar här!"></label>
+      </div>
+
+      <div class="q">
+        <pre class="code">&lt;img ___="drake.jpg" alt="En grön drake"&gt;</pre>
+        <label>Svar: <input type="text" id="a7" placeholder="Skriv svar här!"></label>
+      </div>
+    </section>
+
+    <!-- Complete code -->
+    <section class="quiz-block" id="complete">
+      <h2>4. Skriva komplett kod</h2>
+
+      <div class="q">
+        <p>Skapa en knapp som spelaren kan trycka på för att "Anfalla".</p>
+        <label>Svar: <input type="text" id="a8" placeholder="Skriv koden här!"></label>
+      </div>
+
+      <div class="q">
+        <p>Skriv CSS-kod som gör hela sidans bakgrund svart.</p>
+        <label>Svar: <input type="text" id="a9" placeholder="Skriv koden här!"></label>
+      </div>
+
+      <div class="q">
+        <p>Skapa en punktlista med ett listelement som innehåller texten "Svärd".</p>
+        <label>Svar: <input type="text" id="a10" placeholder="Skriv koden här!"></label>
+      </div>
+    </section>
+
+    <div class="actions">
+      <button id="checkQuiz">Kontrollera svar</button>
+      <button id="resetQuiz">Återställ</button>
+    </div>
+
+    <div id="quiz-result" class="quiz-result" aria-live="polite"></div>
+  </main>
+
+  <!-- page-specific script -->
+  <script src="theme.js"></script>
+  <script src="play-castle.js"></script>
+</body>
+</html>
