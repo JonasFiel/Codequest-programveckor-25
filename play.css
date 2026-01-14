@@ -8,15 +8,69 @@
     padding: 18px; 
     color: var(--DM-text-color); 
 }
-.play-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; flex-wrap:wrap; gap:12px; }
-.play-meta { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:12px; flex-wrap:wrap; }
-.meta-pill { background: rgba(255,255,255,0.02); padding:6px 10px; border-radius:999px; font-weight:700; }
-.play-card { background: color-mix(in srgb, var(--DM-secondary-bg-color) 88%, transparent); padding:18px; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.28); }
-.q-text { font-size:18px; margin-bottom:14px; }
-.q-choices { display:grid; gap:10px; grid-template-columns: repeat(auto-fit, minmax(170px,1fr)); }
-.btn.choice { padding:10px 12px; border-radius:8px; border:1px solid rgba(255, 255, 255, 0.04); background:transparent; transition: transform .12s; }
-.btn.choice.correct { background: linear-gradient(90deg, var(--correct), color-mix(in srgb, var(--correct) 44%, var(--DM-secondary-bg-color))); color:#111; transform: translateY(-4px); }
-.btn.choice.wrong { background: linear-gradient(90deg, var(--incorrect), color-mix(in srgb, var(--incorrect) 34%, var(--DM-secondary-bg-color))); color:#fff; }
-.toast { position: fixed; right: 18px; bottom: calc(var(--navbar-height,64px) + 18px); background: color-mix(in srgb, var(--accent1) 85%, var(--DM-secondary-bg-color)); color:#111; padding:8px 12px; border-radius:10px; box-shadow:0 8px 30px rgba(0,0,0,.35); z-index: 99999; opacity: 0; transform: translateY(8px); transition: all .18s; }
-.toast.visible { opacity: 1; transform: translateY(0); }
+.play-header {
+    display:flex; 
+    justify-content:space-between; 
+    align-items:center; 
+    margin-bottom:24px; 
+    flex-wrap:wrap; gap:12px; 
+}
+.play-meta {
+    display:flex; 
+    justify-content:space-between; 
+    align-items:center; 
+    gap:12px; 
+    margin-bottom:12px; 
+    flex-wrap:wrap; 
+}
+.meta-pill {
+    background: rgba(255,255,255,0.02); 
+    padding:6px 10px; 
+    border-radius:999px; 
+    font-weight:700; 
+}
+.play-card { 
+    background: color-mix(in srgb, var(--DM-secondary-bg-color) 88%, transparent); 
+    padding:18px; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.28); 
+}
+.q-text { 
+    font-size:18px; 
+    margin-bottom:14px; 
+}
+.q-choices { 
+    display:grid; gap:10px; 
+    grid-template-columns: repeat(auto-fit, minmax(170px,1fr)); 
+}
+.btn.choice { 
+    padding:10px 12px; 
+    border-radius:8px; 
+    border:1px solid rgba(255, 255, 255, 0.04); 
+    background:transparent; 
+    transition: transform .12s; 
+}
+.btn.choice.correct { 
+    background: linear-gradient(90deg, var(--correct), color-mix(in srgb, var(--correct) 44%, var(--DM-secondary-bg-color))); color:#111; 
+    transform: translateY(-4px); 
+}
+.btn.choice.wrong { 
+    background: linear-gradient(90deg, var(--incorrect), color-mix(in srgb, var(--incorrect) 34%, var(--DM-secondary-bg-color))); color:#fff; 
+}
+.toast { 
+    position: fixed; 
+    right: 18px; 
+    bottom: calc(var(--navbar-height,64px) + 18px); 
+    background: color-mix(in srgb, var(--accent1) 85%, var(--DM-secondary-bg-color)); 
+    color:#111; 
+    padding:8px 12px; 
+    border-radius:10px; 
+    box-shadow:0 8px 30px rgba(0,0,0,.35); 
+    z-index: 99999; 
+    opacity: 0; 
+    transform: translateY(8px); 
+    transition: all .18s; 
+}
+.toast.visible { 
+    opacity: 1; 
+    transform: translateY(0); 
+}
 @media (max-width:640px) { .play-main { margin: 84px 12px; } .q-text { font-size:16px; } }
