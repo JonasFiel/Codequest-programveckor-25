@@ -4,7 +4,7 @@ readme.MD
 
 ## Projekt
 
-Namn på deltagare: Harald Gromark, Oliver Nilsson, Jonas Fielding, Erkhembayar Erdene, Warisara Khamanuwong
+Namn på deltagare: Harald Gromark, Oliver Nilsson, Jonas Fielding, Erkhembayar Erdene, Warisara Khamanuwong (Baimai)
 
 Tävlar i kategori: UI/UX, Allmänt
 
@@ -12,7 +12,7 @@ Ett webbprojekt byggt för Codequest-programveckor. Projektet innehåller flera 
 
 Oliver: Jobbat med app projektet därmed fortsatt jobba med design och även poster. 
 Harald: har jobbat med app projektet och var även med att skapa design och brainstorming i början.
-Warisara: har varit sjuk de flesta dagarna så hon hjälpt med design och 'bas' filen i projektet.
+Baimai: har varit sjuk de flesta dagarna så hon hjälpt med design och 'bas' filen i projektet.
 Jonas: gjorde resten av webbprojektet var även med i början för design och brainstorming. 
 Erkhembayar: Hjälpte till med brainstorming i början av veckan. Annars inte varit närvarande. 
 
@@ -56,5 +56,5 @@ För detta projekt räcker det att man bara öppnar index.html i webbläsaren. R
 
 ## Kontakt
 
-Projektkontakt: Harald Gromark, Oliver Nilsson, Jonas Fielding, Erkhembayar Erdene, Warisara Khamanuwong
+Projektkontakt: Harald Gromark, Oliver Nilsson, Jonas Fielding, Erkhembayar Erdene, Warisara Khamanuwong (Baimai)
 
