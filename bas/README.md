@@ -4,7 +4,7 @@ readme.MD
 
 ## Projekt
 
-Namn på deltagare: Harald Gromark, Oliver Nilsson, Jonas Fielding, Erkhembayar Erdene, en till
+Namn på deltagare: Harald Gromark, Oliver Nilsson, Jonas Fielding, Erkhembayar Erdene, Baimai
 
 Tävlar i kategori: UI/UX, Allmänt
 
@@ -16,22 +16,23 @@ Ett webbprojekt byggt för Codequest-programveckor. Projektet innehåller flera 
 - Menyer och navigering mellan sidor
 - Flera spel-/spårningssidor (t.ex. slott, skog)
 - Användarprofil och inställningar
-- Flerspråkigt stöd (grundläggande)
+- Både svenska och engleska
+- Byta färgthema
 
 ## Teknisk beskrivning
 
-Projektet är en statisk webbplats byggd med HTML, CSS och JavaScript. Huvudstruktur:
+Projektet är en webbplats men även app byggd med HTML, CSS och JavaScript, medan appen är byggd med hjälp av flutterflow. 
+Huvudstruktur (Webbsidan):
 
 - `index.html` – startsida
 - `play-*.html` / `play-*.js` – olika spelvyer
 - `profil.html` / `profil.js` – profilsida
 - `settings.js` / `language.js` – inställningar och språkval
 
-Arkitektur: Sidorna är separata HTML-filer som delar CSS i rotmappen och i mappen `bas` finns återanvändbara stil- och reset-filer. JavaScript-filer hanterar UI-interaktioner och enkel state-hantering i klienten (ingen backend).
+Arkitektur: Sidorna är separata HTML-filer som delar CSS i rotmappen och i mappen `bas` finns återanvändbara stil och reset-filer. JavaScript-filer hanterar UI-interaktioner och enkel state-hantering i klienten (ingen backend).
 
 Tekniska val:
 
-- Vanilj-JavaScript för enkelhet och kompatibilitet
 - Responsiv CSS för mobil och desktop
 - Filstruktur organiserad så att varje vy har egna `*.html`, `*.js` och `*.css` där det är relevant
 
@@ -43,23 +44,9 @@ Webbsidan är en samling dokument som webbläsaren laddar. JavaScript-filerna sk
 
 Lista över externa bibliotek/verktyg som använts (om några):
 
-- Inga externa ramverk används (ingen React/Vue). Om ni har använt externa scripts eller assets, ange dem här med namn och länk.
-
 ## Installera och köra (juryn)
 
-Eftersom projektet är en statisk webbplats räcker det att öppna `index.html` i en webbläsare. För en bättre lokal serverupplevelse, kör från projektroten:
-
-Windows / macOS / Linux (Python 3):
-
-```bash
-cd ..
-python -m http.server 8000
-# och öppna http://localhost:8000/ i webbläsaren
-```
-
-Eller använd VS Code Live Server-tillägget och öppna `index.html`.
-
-Se också viktiga filer i projektroten: index.html, index.js, och mappar för varje vy.
+Eftersom projektet är en statisk webbplats räcker det att öppna `index.html` i en webbläsare.
 
 ## Förslag på vad ni kan fylla i
 
@@ -70,7 +57,7 @@ Se också viktiga filer i projektroten: index.html, index.js, och mappar för va
 
 ## Kontakt
 
-Projektkontakt: Ange namn och e-post eller GitHub-användarnamn om ni vill.
+Projektkontakt: Harald Gromark, Oliver Nilsson, Jonas Fielding, Erkhembayar Erdene, Baimai
 
 ---
 
