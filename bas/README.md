@@ -12,7 +12,7 @@ Ett webbprojekt byggt för Codequest-programveckor. Projektet innehåller flera 
 
 Oliver: Jobbat med app projektet därmed fortsatt jobba med design och även poster. 
 Harald: har jobbat med app projektet och var även med att skapa design och brainstorming i början.
-Baimai: har varit sjuk de flesta dagarna så hon flödeschema och hjälpt med design och 'bas' filen i projektet.
+Baimai: har varit sjuk de flesta dagarna så hon har gjort flödeschema och hjälpt med design och 'bas' filen i projektet.
 Jonas: gjorde resten av webbprojektet var även med i början för design och brainstorming. 
 Erkhembayar: Hjälpte till med brainstorming i början av veckan. Annars inte varit närvarande. 
 
