@@ -8,13 +8,19 @@ Namn på deltagare: Harald Gromark, Oliver Nilsson, Jonas Fielding, Erkhembayar 
 
 Tävlar i kategori: UI/UX, Allmänt
 
+Ett webbprojekt byggt för Codequest-programveckor. Projektet innehåller flera sidor (start, spel, profiler, inställningar) och syftar till att demonstrera interaktivitet, responsiv design och enklare "spelmekanik". Detta ska vara som en lärnings app för att lära sig programmering, insperat av samma concept som duolingo.
 
-Ett webbprojekt byggt för Codequest-programveckor. Projektet innehåller flera sidor (start, spel, profiler, inställningar) och syftar till att demonstrera interaktivitet, responsiv design och enklare spelmekanik.
+Oliver: Jobbat med app projektet även fortsatt jobba med design och även poster. 
+Harald: har jobbat med app projektet och var även med att skapa design och brainstorming i början.
+Baimai: har varit sjuk de flesta dagarna så hon hjälpa med design och 'bas' filen i projektet.
+Jonas: gjorde resten av webbprojektet var även med i början för design och brainstorming. 
+Erkhembayar: Hjälpte till med brainstorming i början av veckan. Annars inte varit närvarande. 
 
 ## Funktioner
 
 - Menyer och navigering mellan sidor
-- Flera spel-/spårningssidor (t.ex. slott, skog)
+- Flera olika banor / levelar som innehåller olika typer av grundlig lärnings
+- Flera svårighetsgrader
 - Användarprofil och inställningar
 - Både svenska och engleska
 - Byta färgthema
@@ -38,7 +44,7 @@ Tekniska val:
 
 Beskrivning för icke-programmerare:
 
-Webbsidan är en samling dokument som webbläsaren laddar. JavaScript-filerna sköter knapptryckningar, navigering och små spelmoment; CSS bestämmer hur sidan ser ut.
+Webbsidan är en samling dokument som webbläsaren laddar. JavaScript-filerna sköter knapptryckningar, navigering och små spelmoment. CSS bestämmer hur sidan ser ut. Medan HTML är grunden för hemsidan. 
 
 ## Externt producerade komponenter
 
@@ -46,20 +52,9 @@ Lista över externa bibliotek/verktyg som använts (om några):
 
 ## Installera och köra (juryn)
 
-Eftersom projektet är en statisk webbplats räcker det att öppna `index.html` i en webbläsare.
-
-## Förslag på vad ni kan fylla i
-
-- Exakta namn på deltagare
-- Vilken kategori ni tävlar i
-- Kortare punktlista över vad varje person gjorde
-- Eventuella externa resurser eller bilder ni lagt till
+För detta projekt räcker det att man bara öppnar index.html i webbläsaren. 
 
 ## Kontakt
 
 Projektkontakt: Harald Gromark, Oliver Nilsson, Jonas Fielding, Erkhembayar Erdene, Baimai
-
----
-
-Tack! Granska och fyll i de markerade platserna ovan innan inlämning.
 
