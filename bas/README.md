@@ -1,6 +1,6 @@
 readme.MD
 
-# Codequest
+# Codequest, Grupp 1
 
 ## Projekt
 
