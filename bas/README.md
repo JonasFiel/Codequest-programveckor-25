@@ -4,15 +4,15 @@ readme.MD
 
 ## Projekt
 
-Namn på deltagare: Harald Gromark, Oliver Nilsson, Jonas Fielding, Erkhembayar Erdene, Baimai
+Namn på deltagare: Harald Gromark, Oliver Nilsson, Jonas Fielding, Erkhembayar Erdene, Warisara Khamanuwong
 
 Tävlar i kategori: UI/UX, Allmänt
 
 Ett webbprojekt byggt för Codequest-programveckor. Projektet innehåller flera sidor (start, spel, profiler, inställningar) och syftar till att demonstrera interaktivitet, responsiv design och enklare "spelmekanik". Detta ska vara som en lärnings app för att lära sig programmering, insperat av samma concept som duolingo.
 
-Oliver: Jobbat med app projektet även fortsatt jobba med design och även poster. 
+Oliver: Jobbat med app projektet därmed fortsatt jobba med design och även poster. 
 Harald: har jobbat med app projektet och var även med att skapa design och brainstorming i början.
-Baimai: har varit sjuk de flesta dagarna så hon hjälpa med design och 'bas' filen i projektet.
+Warisara: har varit sjuk de flesta dagarna så hon hjälpt med design och 'bas' filen i projektet.
 Jonas: gjorde resten av webbprojektet var även med i början för design och brainstorming. 
 Erkhembayar: Hjälpte till med brainstorming i början av veckan. Annars inte varit närvarande. 
 
@@ -33,9 +33,9 @@ Huvudstruktur (Webbsidan):
 - `index.html` – startsida
 - `play-*.html` / `play-*.js` – olika spelvyer
 - `profil.html` / `profil.js` – profilsida
-- `settings.js` / `language.js` – inställningar och språkval
+- `settings.js` / `language.js`/ `theme.js` – inställningar, språkval och färgtema
 
-Arkitektur: Sidorna är separata HTML-filer som delar CSS i rotmappen och i mappen `bas` finns återanvändbara stil och reset-filer. JavaScript-filer hanterar UI-interaktioner och enkel state-hantering i klienten (ingen backend).
+Arkitektur: Sidorna är separata HTML-filer som delar CSS i rotmappen och i mappen `bas` finns återanvändbar stil och reset-fil. JavaScript-filer hanterar UI-interaktioner och enkel state-hantering i klienten (ingen backend).
 
 Tekniska val:
 
@@ -52,9 +52,9 @@ Lista över externa bibliotek/verktyg som använts (om några):
 
 ## Installera och köra (juryn)
 
-För detta projekt räcker det att man bara öppnar index.html i webbläsaren. 
+För detta projekt räcker det att man bara öppnar index.html i webbläsaren. Rekommenderat att ha Visual Studio Code med Live server installerad (extensions).
 
 ## Kontakt
 
-Projektkontakt: Harald Gromark, Oliver Nilsson, Jonas Fielding, Erkhembayar Erdene, Baimai
+Projektkontakt: Harald Gromark, Oliver Nilsson, Jonas Fielding, Erkhembayar Erdene, Warisara Khamanuwong
 
