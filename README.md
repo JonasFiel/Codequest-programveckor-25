@@ -11,11 +11,11 @@ Tävlar i kategori: UI/UX, Allmänt
 
 Ett webbprojekt byggt för Codequest-programveckor. Projektet innehåller flera sidor (start, spel, profiler, inställningar) och syftar till att demonstrera interaktivitet, responsiv design och enklare "spelmekanik". Detta ska vara som en lärnings app för att lära sig programmering, insperat av samma concept som duolingo.
 
-Oliver: Jobbat med app projektet därmed fortsatt jobba med design och även poster. 
-Harald: har jobbat med app projektet och var även med att skapa design och brainstorming i början.
-Baimai: har varit sjuk de flesta dagarna så hon har gjort flödeschema och hjälpt med design och 'bas' filen i projektet.
-Jonas: gjorde resten av webbprojektet var även med i början för design och brainstorming. 
-Erkhembayar: Hjälpte till med brainstorming i början av veckan. Annars inte varit närvarande. 
+- Oliver: Jobbat med app projektet därmed fortsatt jobba med design och även poster. 
+- Harald: Har jobbat med app projektet och var även med att skapa design och brainstorming i början.
+- Baimai: Har varit sjuk de flesta dagarna så hon har gjort flödeschema och hjälpt med design och 'bas' filen i projektet.
+- Jonas: Hjorde resten av webbprojektet var även med i början för design och brainstorming. 
+- Erkhembayar: Hjälpte till med brainstorming i början av veckan. Annars inte varit närvarande. 
 
 ## Funktioner
 
